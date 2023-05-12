@@ -56,7 +56,11 @@ author_profile: true
       <div class="box">
         <div class="box-txt">
           <p>
-            <a href="{{ member.personalurl }}">{{ member.name }}</a> ({{ member.year }})
+            {% if member.personalurl %}
+              <a href="{{ member.personalurl }}">{{ member.name }}</a> ({{ member.year }})
+            {% else %}
+              {{ member.name }} ({{ member.year }})
+            {% endif %}
           <p>
         </div>
       </div>
