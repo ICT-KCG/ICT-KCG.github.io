@@ -1,21 +1,17 @@
 ---
 permalink: /
 title: "About us"
-excerpt: "About us"
+# excerpt: "About us"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Home
-======
 This is the front page to introduce our group.
 
-Goal
-======
+## Goal
 Our research goal.
 
-Contact
-======
+## Contact
 Contact us via xxx.
