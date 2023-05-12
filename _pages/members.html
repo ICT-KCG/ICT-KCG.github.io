@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 {% include base_path %}
-<div>
+<div class="page_section">
   <h2>Group Leader</h2>
   {% for member in site.members %}
     {% if member.type == "group leader" %}
@@ -23,7 +23,6 @@ author_profile: true
       </div>
     {% endif %}
   {% endfor %}
-  <br>
 </div>
 
 <div>
@@ -43,7 +42,6 @@ author_profile: true
       </div>
     {% endif %}
   {% endfor %}
-  <br>
 </div>
 
 <!-- Faculties
@@ -63,6 +61,9 @@ Graduated students
 To be completed. -->
 
 <style>
+  .page_section {
+    clear: both;
+  }
   .box {
     width: 150px;
     margin: auto 50px;
