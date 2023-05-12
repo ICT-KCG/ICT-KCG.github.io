@@ -11,7 +11,7 @@ author_profile: true
 {% for member in site.members %}
   {% if member.type == "group leader" %}
     <div class="group_leader">
-        <img src="{{ member.imgurl }}" />
+        <img src="{{ member.imgurl }}" width="200"/>
         <br />
         <a href="{{ member.personalurl }}">{{ member.name }}</a>
     </div>
