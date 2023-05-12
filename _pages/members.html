@@ -10,11 +10,11 @@ author_profile: true
 <h2>Group Leader</h2>
 {% for member in site.members %}
   {% if member.type == "group leader" %}
-    <div class="box-gl">
-      <div class="box-gl-img">
-        <img src="{{ member.imgurl }}" width="200" alt="/images/profile.png"/>
+    <div class="box-gl" width="200">
+      <div class="box-gl-img" width="100%">
+        <img src="{{ member.imgurl }}" alt="/images/profile.png"/>
       </div>
-      <div class="box-gl-txt">
+      <div class="box-gl-txt" width="100%">
         <span style="text-align:cneter">
           <a href="{{ member.personalurl }}">{{ member.name }}</a>
         </span>
