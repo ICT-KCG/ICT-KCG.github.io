@@ -6,41 +6,43 @@ author_profile: true
 ---
 
 {% include base_path %}
+<div>
+  <h2>Group Leader</h2>
+  {% for member in site.members %}
+    {% if member.type == "group leader" %}
+      <div class="box">
+        <div class="box-img">
+          <img src="{{ member.imgurl }}" />
+        </div>
+        <div class="box-txt">
+          <p>
+            {{ member.title }} <br>
+            <a href="{{ member.personalurl }}">{{ member.name }}</a>
+          <p>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
 
-<h2>Group Leader</h2>
-{% for member in site.members %}
-  {% if member.type == "group leader" %}
-    <div class="box">
-      <div class="box-img">
-        <img src="{{ member.imgurl }}" alt="/images/profile.png"/>
+<div>
+  <h2>Faulties</h2>
+  {% for member in site.members %}
+    {% if member.type == "faculty" %}
+      <div class="box">
+        <div class="box-img">
+          <img src="{{ member.imgurl }}" />
+        </div>
+        <div class="box-txt">
+          <p>
+            {{ member.title }} <br>
+            <a href="{{ member.personalurl }}">{{ member.name }}</a>
+          <p>
+        </div>
       </div>
-      <div class="box-txt">
-        <p>
-          {{ member.title }} <br>
-          <a href="{{ member.personalurl }}">{{ member.name }}</a>
-        <p>
-      </div>
-    </div>
-  {% endif %}
-{% endfor %}
-
-<h2>Faulties</h2>
-{% for member in site.members %}
-  {% if member.type == "faculty" %}
-    <div class="box">
-      <div class="box-img">
-        <img src="{{ member.imgurl }}" alt="/images/profile.png"/>
-      </div>
-      <div class="box-txt">
-        <p>
-          {{ member.title }} <br>
-          <a href="{{ member.personalurl }}">{{ member.name }}</a>
-        <p>
-      </div>
-    </div>
-  {% endif %}
-{% endfor %}
-
+    {% endif %}
+  {% endfor %}
+</div>
 
 <!-- Faculties
 ------
