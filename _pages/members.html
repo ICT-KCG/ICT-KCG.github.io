@@ -50,16 +50,13 @@ author_profile: true
 <div style="clear:both"></div>
 
 <div>
-  <h2>Ph.D students</h2>
+  <h2>Ph.D. students</h2>
   {% for member in site.members %}
     {% if member.type == "phd" %}
       <div class="box">
-        <div class="box-img">
-          <img src="{{ member.imgurl }}" />
-        </div>
         <div class="box-txt">
           <p>
-            {{ member.title }} <br>
+            Ph.D. student ( {{ member.year }} ) <br>
             <a href="{{ member.personalurl }}">{{ member.name }}</a>
           <p>
         </div>
@@ -75,12 +72,9 @@ author_profile: true
   {% for member in site.members %}
     {% if member.type == "ms" %}
       <div class="box">
-        <div class="box-img">
-          <img src="{{ member.imgurl }}" />
-        </div>
         <div class="box-txt">
           <p>
-            {{ member.title }} <br>
+            M.S. student ( {{ member.year }} ) <br>
             <a href="{{ member.personalurl }}">{{ member.name }}</a>
           <p>
         </div>
