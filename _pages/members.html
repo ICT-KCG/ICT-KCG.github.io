@@ -18,7 +18,11 @@ author_profile: true
         <div class="box-txt">
           <p>
             {{ member.title }} <br>
-            <a href="{{ member.personalurl }}">{{ member.name }}</a>
+            {% if member.personalurl %}
+              <a href="{{ member.personalurl }}">{{ member.name }}</a>
+            {% else %}
+              {{ member.name }}
+            {% endif %}
           <p>
         </div>
       </div>
@@ -39,7 +43,11 @@ author_profile: true
         <div class="box-txt">
           <p>
             {{ member.title }} <br>
-            <a href="{{ member.personalurl }}">{{ member.name }}</a>
+            {% if member.personalurl %}
+              <a href="{{ member.personalurl }}">{{ member.name }}</a>
+            {% else %}
+              {{ member.name }}
+            {% endif %}
           <p>
         </div>
       </div>
