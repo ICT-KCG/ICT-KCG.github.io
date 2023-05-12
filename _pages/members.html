@@ -1,0 +1,35 @@
+---
+layout: archive
+title: "Members"
+permalink: /members/
+author_profile: true
+---
+
+{% include base_path %}
+
+<h2>Group Leader</h2>
+{% for member in site.members %}
+  {% if member.type == "group leader" %}
+    <div class="group_leader">
+        <img src="{{ member.imgurl }}" />
+        <br />
+        <a href="{{ member.personalurl }}">{{ member.name }}</a>
+    </div>
+  {% endif %}
+{% endfor %}
+
+<!-- Faculties
+------
+Saiping Guan, Zixuan Li
+
+Ph.D students
+------
+To be completed.
+
+M.S. students
+------
+To be completed.
+
+Graduated students
+------
+To be completed. -->
