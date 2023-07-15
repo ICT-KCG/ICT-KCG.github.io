@@ -1,6 +1,7 @@
 ---
 collection: members
-type: "phd"
+type: "faculty"
+title: "Assistant Professor"
 year: "2016"
 name: "Long Bai"
 personalurl: "https://waltbai.github.io/"
