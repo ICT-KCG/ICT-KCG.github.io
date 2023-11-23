@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "ICT-NDST-OKN"
+title                    : "ICT-KCG"
 title_separator          : "-"
-name                     : &name "Open Knowledge Group"
-description              : &description "Open Knowledge Group in ICT, CAS"
+name                     : &name "Knowledge Computing Group"
+description              : &description "Knowledge Computing Group in ICT, CAS"
 url                      : https://ict-ndst-okn.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "ICT-NDST-OKN/ICT-NDST-OKN.github.io"
+repository               : "ICT-KCG/ICT-KCG.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,9 +80,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Open Knowledge"
+  name             : "Knowledge Computing Group"
   avatar           : "profile.png"
-  bio              : "Open Knowledge Group in ICT, CAS"
+  bio              : "Knowledge Computing Group in ICT, CAS"
   location         : "Beijing China"
   employer         :
   pubmed           : 
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "ICT-NDST-OKN"
+  github           : "ICT-KCG"
   google_plus      :
   keybase          :
   instagram        :
