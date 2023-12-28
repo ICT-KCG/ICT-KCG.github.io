@@ -3,5 +3,6 @@ collection: members
 type: "faculty"
 title: "Assistant Professor"
 name: "Saiping Guan"
-imgurl: "/images/profile.png"
+personalurl: ""
+imgurl: "/images/gsp.jpg"
 ---

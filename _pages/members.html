@@ -62,6 +62,9 @@ author_profile: true
   {% for member in site.members %}
     {% if member.type == "phd" %}
       <div class="box">
+        <div class="box-img">
+          <img src="{{ member.imgurl }}" />
+        </div>
         <div class="box-txt">
           <p>
             {% if member.personalurl %}
@@ -83,6 +86,9 @@ author_profile: true
   {% for member in site.members %}
     {% if member.type == "ms" %}
       <div class="box">
+        <div class="box-img">
+          <img src="{{ member.imgurl }}" />
+        </div>
         <div class="box-txt">
           <p>
             <a href="{{ member.personalurl }}">{{ member.name }}</a> ({{ member.year }})
@@ -94,6 +100,21 @@ author_profile: true
 </div>
 
 <div style="clear:both"></div>
+
+<!-- <div>
+  <h2>Visiting students</h2>
+  {% for member in site.members %}
+    {% if member.type == "visiting" %}
+      <div class="box">
+        <div class="box-txt">
+          <p>
+            <a href="{{ member.personalurl }}">{{ member.name }}</a> ({{ member.year }})
+          <p>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div> -->
 
 <div>
   <h2>Graduated students</h2>

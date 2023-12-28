@@ -1,6 +1,6 @@
 ---
 name: "Xiaolong Jin"
-imgurl: "/images/jxl.jpg"
+imgurl: "/images/jxl.png"
 personalurl: "http://bigdatalab.ac.cn/jxl/"
 collection: members
 type: "group leader"
