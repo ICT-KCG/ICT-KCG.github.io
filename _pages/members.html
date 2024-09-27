@@ -60,7 +60,7 @@ author_profile: true
 <div>
   <h2>Ph.D. students</h2>
   {% for member in site.members %}
-    {% if member.type == "phd" %}
+    {% if member.type == "phd" and member.graduated == false %}
       <div class="box">
         <div class="box-img">
           <img src="{{ member.imgurl }}" />
@@ -84,7 +84,7 @@ author_profile: true
 <div>
   <h2>M.S. students</h2>
   {% for member in site.members %}
-    {% if member.type == "ms" %}
+    {% if member.type == "ms" and member.graduated == false %}
       <div class="box">
         <div class="box-img">
           <img src="{{ member.imgurl }}" />
@@ -123,7 +123,7 @@ author_profile: true
       <div class="box">
         <div class="box-txt">
           <p>
-            <a href="{{ member.personalurl }}">{{ member.name }}</a> ({{ member.year }})
+            <a href="{{ member.personalurl }}">{{ member.name }}</a> ({{ member.year }} {{ member.type }})
           <p>
         </div>
       </div>
