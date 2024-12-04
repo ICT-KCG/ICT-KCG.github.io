@@ -1,7 +1,7 @@
 ---
 collection: members
 type: "faculty"
-title: "Assistant Professor"
+title: "Associate Professor"
 name: "Saiping Guan"
 personalurl: ""
 imgurl: "/images/gsp.jpg"
